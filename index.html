@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Navigation-->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+        <a href="help.html" target="_blank">Help</a>
+    </nav>
+    <!--Main-->
+    <section>
+        <section id="home">
+        <div id="welcomeBanner">
+            Welcome to Local Community Portal
+            <span style="color:red; font-weight:bold;">
+                Special Offer!
+            </span>
+        </div>
+    </section>
+    <section id="events">
+        <h2>Upcoming Events</h2>
+
+    <table>
+        <tr>
+            <td>
+                <img src="images/musicevent.jpg" alt="Music Event" title="Music Event" ondblclick="enlargeImage(this)">
+                <p>Music Event</p>
+            </td>
+
+            <td>
+                <img src="images/foodfestival.jpg" alt="Food Festival" title="Food Festival">
+                <p>Food Festival</p>
+            </td>
+
+            <td>
+                <img src="images/sportsevent.jpg" alt="Sports Event" title="Sports Event">
+                <p>Sports Event</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="images/danceevent.jpg" alt="Dance Event" title="Dance Event">
+                <p>Dance Event</p>
+            </td>
+
+            <td>
+                <img src="images/communitymeetup.jpg" alt="Community Meetup" title="Community Meetup">
+                <p>Community Meetup</p>
+            </td>
+
+            <td>
+                <img src="images/techseminar.jpg" alt="Tech Seminar" title="Tech Seminar">
+                <p>Tech Seminar</p>
+            </td>
+        </tr>
+    </table>
+    </section>
+    <section>
+
+    <h2>Event Registration</h2>
+
+    <form>
+
+        <input type="text"
+               placeholder="Enter Name"
+               required
+               autofocus>
+
+        <br><br>
+
+        <input type="email"
+               placeholder="Enter Email"
+               required>
+
+        <br><br>
+
+        <input type="date" required>
+
+        <br><br>
+
+        <select>
+            <option>Music</option>
+            <option>Sports</option>
+            <option>Seminar</option>
+        </select>
+
+        <br><br>
+
+        <textarea placeholder="Message"></textarea>
+
+        <br><br>
+
+        <button type="submit" onclick="displayMessage()">
+            Register
+        </button>
+
+    </form>
+    <section>
+
+        <h2>Event Promo Video</h2>
+
+        <video width="400" controls oncanplay="videoReady()">
+
+        <source src="vedios/promo.mp4.mp4" type="video/mp4">
+
+        </video>
+
+        <p id="videoMessage"></p>
+
+    </section>
+    <section>
+
+        <h2>Find Nearby Events</h2>
+
+        <button onclick="getLocation()">
+            Find Nearby Events
+        </button>
+
+        <p id="location"></p>
+
+    </section>
+</section>
+    <section id="contact">
+        <h2>Contact Section</h2>
+        <p> For more details use event123@gmail.com </p>
+    </section>
+    <!--Footer-->
+    <footer>
+        <p> @Community Hub </p>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+</html>
